@@ -1,0 +1,6 @@
+sources:
+  - name: random
+    database: raw
+    schema: public
+    tables:
+        - name: random_sales_data

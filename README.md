@@ -1,15 +1,28 @@
-Welcome to your new dbt project!
+# {{ organization_name }} Analytics
 
-### Using the starter project
+This is a [dbt](https://www.getdbt.com) project for managing {{ organization_name }}'s analytics project.
 
-Try running the following commands:
-- dbt run
-- dbt test
+Our analytics stack:
+- Loader: {{ your_data_loading_tools }}
+- Warehouse: {{ your_warehouse }}
+- Transformation: dbt
+- Business Intelligence: {{ your_bi_tool }}
 
+## Permissions
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](http://community.getbdt.com/) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+Access to the {{ warehouse }} warehouse is managed on a per-user basis by {{ person_or_team_name }}. 
+If you need access, open a request in {{ tool_or_location }} by {{ best_way_to_write_request }}.
+
+## Using This Project
+  
+  The easiest way to contribute to this project is by developing in dbt Cloud. Contact {{ person_or_team_name }}. 
+  If you need access, open a request in {{ tool_or_location }} by {{ best_way_to_write_request }}.
+  
+  Once you have access, navigate to the develop tab in the menu and fill out any required information to get connected.
+  
+  In the command line bar at the bottom of the interface, run the following commands one at a time:
+  - `dbt deps`  - installs any packages defined in the packages.yml file.
+  - `dbt seed`  - builds any .csv files as tables in the warehouse. These are located in the data folder of the project.
+  - `dbt run`   - builds the models found in the project into your dev schema in the warehouse.
+  
+  
