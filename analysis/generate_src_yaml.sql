@@ -1,1 +1,3 @@
-{{ codegen.generate_source(schema_name= 'public', database_name= 'raw') }}
+{{ codegen.generate_model_yaml(
+    model_names=['stg_random__random_sales_data']
+) }}
