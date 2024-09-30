@@ -9,6 +9,12 @@ source as (
 renamed as (
 
     select
+        id,
+        sale_date,
+        customer_id,
+        region,
+        --product_id,
+        sale_amount
 
     from source
 
